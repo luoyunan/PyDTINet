@@ -1,10 +1,11 @@
 # PyDTINet
-PyDTINet is a Python implementation of DTINet, a network integration approach for drug-target interaction prediction. This Python implementation is provided for the convenience of users who want to use DTINet with Python in their own research. For the original implementation (written in MATLAB) associated with the publication that was used to generate the results in the paper, please see this [GitHub repo](https://github.com/luoyunan/DTINet). More details about the algorithm can be found in the [paper](https://www.nature.com/articles/s41467-017-00680-8).
+PyDTINet is a Python implementation of DTINet, a network integration approach for drug-target interaction prediction. This Python implementation is provided for the convenience of users who want to use DTINet with Python in their own research. For the original implementation (written in MATLAB) associated with the publication that was used to generate the results in the paper, please see the original [GitHub repo](https://github.com/luoyunan/DTINet). More details about the algorithm can be found in our Nature Communications [paper](https://www.nature.com/articles/s41467-017-00680-8).
 
 ## Requirements
 PyDTINet currently only supports Python 2 due to the dependency on the [IMC](http://bigdata.ices.utexas.edu/software/inductive-matrix-completion/) library used to perform the matrix completion step (we welcome contributions to support Python 3! See [feature request](#feature-requests-of-python-3-support) below). You can create a conda environment with the required dependencies by running the following command:
 
     conda env create -n dtinet -f environment.yml
+    conda activate dtinet
 
 ## Usage
 1. Install the IMC library.
